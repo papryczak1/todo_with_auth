@@ -1,0 +1,22 @@
+{% extends 'todo/base.html' %}
+
+{% block content %}
+    <div class="row">
+        <div class="col">
+            <div class="flex-container">
+                <h1 class="mb-3 text-center">Organize time with TodoApp.</h1>
+                <p class="text-center">This application should help you organize your free time.
+                Add, edit, delete new tasks and mark them as completed.
+                Thanks to our application you will take better care of your free time
+                by adding tasks that you have to add to your own list.
+                Easy access to tasks and the ability to mark those that are specific
+                will make you spend your free time only on those things that should be relevant.
+                Stop wasting your time join us and see how easily you can take care of your free time!</p>
+                <div class="button-container">
+                    <a href="{% url 'signupuser' %}" class="btn btn-danger mr-2">Sign Up</a>
+                    <a href="{% url 'loginuser' %}" class="btn btn-danger">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

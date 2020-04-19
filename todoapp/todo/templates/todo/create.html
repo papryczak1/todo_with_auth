@@ -1,0 +1,19 @@
+{% extends 'todo/base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col">
+        <h1>Create todo</h1>
+        {% if error %}
+        <div class="alert alert-danger" role="alert">
+            {{ error }}
+        </div>
+        {% endif %}
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary">Add Todo</button>
+</form>
+    </div>
+</div>
+{% endblock %}

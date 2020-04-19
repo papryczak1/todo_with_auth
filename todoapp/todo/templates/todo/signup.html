@@ -1,0 +1,21 @@
+{% extends 'todo/base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col">
+        <div class="flex-container">
+            <h1>Signup</h1>
+            {% if error %}
+            <div class="alert alert-danger" role="alert">
+                {{ error }}
+            </div>
+            {% endif %}
+            <form method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

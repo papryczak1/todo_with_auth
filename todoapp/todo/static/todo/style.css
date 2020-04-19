@@ -1,0 +1,17 @@
+body {
+    box-sizing: border-box;
+}
+
+.button-container {
+    display: inline-block;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
